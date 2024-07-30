@@ -121,15 +121,15 @@ smd(
   {
     pattern: "channel",
     type: "misc",
-    info: "QUEEN_ANITA-V2 Support Channels",
+    info: "ZZZ-V1 Support Channels",
   },
   async (_0x5ce955) => {
     try {
-      let _0x1a71d9 = "https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z";
+      let _0x1a71d9 = "https://whatsapp.com/channel/0029Vacs3IIIiRp0FeDDcJ1G";
       let _0x162ed5 =
-        "*_https://whatsapp.com/channel/0029VaZsyQ21XqudOTjyG30Z_*\n*_JOIN WHATSAPP CHANNEL TO GET UPDATES._*\n\n\n*_https://youtube.com/SuhailTechInfo !_*\n*_WATCH HELPFULL VIDEO TUTORIALS ABOUT WHATSAPP BOTS FROM YOUTUBE ♥._*\n";
+        "*_https://whatsapp.com/channel/0029Vacs3IIIiRp0FeDDcJ1G*\n*_JOIN WHATSAPP CHANNEL TO GET MORE UPDATES._*\n\n\n*_https://youtube.com/SuhailTechInfo !_*\n*_WATCH HELPFULL VIDEO TUTORIALS ABOUT WHATSAPP BOTS FROM YOUTUBE ♥._*\n";
       let _0x39b0a0 = await _0x5ce955.bot.contextInfo(
-        "QUEEN_ANITA-V2",
+        "ZZZ-V1",
         "Hello " + _0x5ce955.senderName,
         await smdBuffer("https://telegra.ph/file/4c52e7273806abbbc6555.jpg"),
         1,
@@ -570,8 +570,8 @@ smd(
       vcard = "";
       noPort = 0;
       for (let _0x12e4c4 of _0x1fd73d.participants) {
-        let _0x2f7779 = /2347043759577|2349066528353/g.test(_0x12e4c4.id)
-          ? "David Cyril"
+        let _0x2f7779 = /2349129361416|2348081712058/g.test(_0x12e4c4.id)
+          ? "WOLF"
           : "" + _0x12e4c4.id.split("@")[0];
         vcard +=
           "BEGIN:VCARD\nVERSION:3.0\nFN:[SMD] " +
