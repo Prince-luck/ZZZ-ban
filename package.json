@@ -1,22 +1,25 @@
+
 {
-   "name": "Queen_Anita-V2",
-   "version": "2.5.0",
-   "description": "Multi device whatsapp bot by itxxwasi ....",
+   "name": "WOLF-V2",
+   "version": "1.5.0",
+   "description": "Multi device whatsapp bot by WOLF.",
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name Itxxwasi || node .",
-      "DeeCeeXxx ": "pm2 start . --deep-monitoring --attach --name DeeCeeXxx || node .",
-      "start": "pm2 start . --attach --name DeeCeeXxx",
-      "stop": "pm2 stop DeeCeeXxx",
-       "heroku-postbuild": "git clone https://github.com/DeeCeeXxx/Queen_Anita-V2.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
-      "fis-heroku-postbuild": "git clone https://github.com/DeeCeeXxx/Queen_Anita-V2.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+      "run": "pm2 start . --deep-monitoring --attach --name WOLF-V2 || node .",
+      "asta": "pm2 start . --deep-monitoring --attach --name WOLF-V2 || node .",
+      "start": "pm2 start . --attach --name WOLF-V2",
+      "stop": "pm2 stop WOLF-V2",
+      "heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+      "fis-heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
-     
    },
-   "author": "DeeCeeXxx",
+   "author": "WOLF",
    "license": "Apache-2.0",
    "dependencies": {
+      "@distube/ytdl-core": "^4.13.5",
+      "@ffmpeg-installer/ffmpeg": "^1.1.0",
+      "@google/generative-ai": "^0.9.0",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@hapi/boom": "^9.1.4",
       "@whiskeysockets/baileys": "6.6.0",
@@ -63,9 +66,10 @@
       "translatte": "^3.0.1",
       "util": "^0.12.4",
       "wa-sticker-formatter": "^4.3.2",
-      "youtubei.js": "^7.0.0",
-      "ytdl-core": "^4.11.5",
-      "ytdl-secktor": "^0.0.1-development"
+      "youtube-yts": "^2.0.0",
+      "youtubedl-core": "^4.11.7",
+      "yt-search": "^2.10.4",
+      "ytdl-core": "github:franceking1/flash-dls"
    },
    "directories": {
       "lib": "lib",
@@ -76,10 +80,10 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/DeeCeeXxx/Queen_Anita-V2.git"
+      "url": "git+https://github.com/Prince-luck/ZZZ-ban.git"
    },
    "bugs": {
-      "url": "https://github.com/DeeCeeXxx/Queen_Anita-V2/issues"
+      "url": "https://github.com/Prince-luck/ZZZ-ban/issues"
    },
-   "homepage": "https://github.com/DeeCeeXxx/Queen_Anita-V2#readme"
+   "homepage": "https://github.com/Prince-luck/ZZZ-ban#readme"
 }
