@@ -114,7 +114,7 @@ if (ty) {
                 `*_You need to pay 🪙100 to increase bank capacity ~ 1000 sp_*`
               );
             const deduct1 = await eco.deduct(user, "Suhail", 100);
-            const add1 = eco.giveCapacity(user, "Davidl", 1000);
+            const add1 = eco.giveCapacity(user, "WOLFl", 1000);
             return await message.reply(
               `*1000 🪙diamond storage has been added in ${message.senderName} bank*`
             );
@@ -126,8 +126,8 @@ if (ty) {
               return message.reply(
                 `*You need to pay 🪙1000 to increase bank capacity ~ 100000 sp*`
               );
-            const deduct2 = await eco.deduct(user, "David", 1000);
-            const add2 = eco.giveCapacity(user, "David", 100000);
+            const deduct2 = await eco.deduct(user, "WOLF", 1000);
+            const add2 = eco.giveCapacity(user, "WOLF", 100000);
             return await message.reply(
               `*100000 🪙diamond storage has been added in ${message.pushName} bank*`
             );
@@ -139,8 +139,8 @@ if (ty) {
               return message.reply(
                 `You need to pay 🪙10000 to increase bank capacity ~ 1000 sp`
               );
-            const deduct3 = await eco.deduct(user, "David", 10000);
-            const add3 = eco.giveCapacity(user, "David", 10000000);
+            const deduct3 = await eco.deduct(user, "WOLF", 10000);
+            const add3 = eco.giveCapacity(user, "WOLF", 10000000);
             return await message.reply(
               `*10000000 🪙diamond storage has been added in ${message.pushName}\'s bank*`
             );
@@ -176,8 +176,8 @@ if (ty) {
             "Baka!! Provide the 💰amount you want to deposit!"
           );
         let d = parseInt(match);
-        const deposit = await eco.deposit(message.sender, "David", d);
-        const balance = await eco.balance(message.sender, "David");
+        const deposit = await eco.deposit(message.sender, "WOLF", d);
+        const balance = await eco.balance(message.sender, "WOLF");
         if (deposit.noten)
           return message.reply("You can't deposit what you don't have💰."); //if user states more than whats in his wallet
         return await message.reply(
@@ -382,8 +382,8 @@ if (ty) {
         const user1 = message.sender;
         const user2 = users;
         const k = 1000;
-        const balance1 = await eco.balance(user1, "David");
-        const balance2 = await eco.balance(user2, "David");
+        const balance1 = await eco.balance(user1, "WOLF");
+        const balance2 = await eco.balance(user2, "WOLF");
         const typ = ["ran", "rob", "caught"];
         const random = typ[Math.floor(Math.random() * typ.length)];
         if (k > balance1.wallet)
@@ -510,7 +510,7 @@ if (ty) {
         let media = await getBuffer(hjkl);
         message.reply(
           media,
-          { packname: "David", author: "Economy" },
+          { packname: "WOLF", author: "Economy" },
           "sticker"
         );
         const f = [
@@ -552,11 +552,11 @@ if (ty) {
             `*Sorry ${message.pushName}, you can only gamble with more than 🪙50.*`
           );
         if (r == opp) {
-          let give = await eco.give(user, "David", twice); //message.react('⭐️')
+          let give = await eco.give(user, "WOLF", twice); //message.react('⭐️')
           return await message.reply(`*📈 You won 🪙${twice}*`);
           //return await Aviator.bot.sendButtonText(message.chat, `*📈 You won 🪙${twice}*`, `${Config.ownername.split(' ')[0]}-Economy \n Version: 0.0.6`, message);
         } else {
-          let deduct = await eco.deduct(user, "David", texts[0]);
+          let deduct = await eco.deduct(user, "WOLF", texts[0]);
 
           //message.react('🤮')
           return await message.reply(`*📉 You lost 🪙${texts[0]}*`);

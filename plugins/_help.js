@@ -30,21 +30,21 @@ smd(
 ➮ʀᴜɴᴛɪᴍᴇ - ${runtime(process.uptime())} 
 ➮ᴅᴀᴛᴇ - ${message.date} 
 ➮ɴᴏᴡ ᴛɪᴍᴇ - ${message.time} 
-➮Fᴏᴜɴᴅᴇʀ- *ZZZ ban*
+➮Fᴏᴜɴᴅᴇʀ- *Star King*
 ➮Oᴡɴᴇʀ - ${Config.ownername} 
 ➮Nᴜᴍ - ${owner.split(",")[0]} 
 ➮Mᴇᴍᴏ - ${formatp(os.totalmem() - os.freemem())} 
-      \n *ZZZ ban SIMPLE WHATSAPP BOT*\n\n ${readmore} 
+      \n *QUEEN_ALYA SIMPLE WHATSAPP BOT*\n\n ${readmore} 
 ╭──❰ *ALL MENU* ❱ 
-│🎗 Lɪꜱᴛ 
-│🎗 Cᴀᴛᴇɢᴏʀʏ 
-│🎗 Hᴇʟᴘ 
-│🎗 Aʟɪᴠᴇ 
-│🎗 Uᴘᴛɪᴍᴇ 
-│🎗 Wᴇᴀᴛʜᴇʀ 
-│🎗 Lɪɴᴋ 
-│🎗 Cᴘᴜ 
-│🎗 Rᴇᴘᴏꜱɪᴛᴏʀʏ 
+│💞 Lɪꜱᴛ 
+│💞 Cᴀᴛᴇɢᴏʀʏ 
+│💞 Hᴇʟᴘ 
+│💞 Aʟɪᴠᴇ 
+│💞 Uᴘᴛɪᴍᴇ 
+│💞 Wᴇᴀᴛʜᴇʀ 
+│💞 Lɪɴᴋ 
+│💞 Cᴘᴜ 
+│💞 Rᴇᴘᴏꜱɪᴛᴏʀʏ 
 ╰─────────────⦁`.trim();
       return await message.bot.sendUi(message.from, { caption: menuMessage });
     } catch (error) {
@@ -239,11 +239,11 @@ astro_patch.cmd(
       const { commands } = require("../lib");
       let listMessage = `\n  
 ╭━━〘 * ${Config.botname} * 〙    
-┃ 🎗 Prefix: ${Config.HANDLERS}
-┃ 🎗 Owner: ${Config.ownername}
-┃ 🎗 Commands: ${commands.length}
-┃ 🎗 Uptime: ${runtime(process.uptime())}
-┃ 🎗 Mem: ${formatp(os.totalmem() - os.freemem())}
+┃ 💞 Prefix: ${Config.HANDLERS}
+┃ 💞 Owner: ${Config.ownername}
+┃ 💞 Commands: ${commands.length}
+┃ 💞 Uptime: ${runtime(process.uptime())}
+┃ 💞 Mem: ${formatp(os.totalmem() - os.freemem())}
 ╰━━━━━━━━━━━━━━⊷\n`;
 
       for (let i = 0; i < commands.length; i++) {

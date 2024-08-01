@@ -129,7 +129,7 @@ smd(
 
       let too = `*Separate the text with _:_ sign!*\n*Example : ${
         prefix + smd
-      } David _:_ Bot*`;
+      } WOLF _:_ Bot*`;
       if (!mm) {
         let str = `┌───〈 *ᴇᴅɪᴛᴏʀ ᴍᴇɴᴜ*  〉───◆
 │╭─────────────···▸

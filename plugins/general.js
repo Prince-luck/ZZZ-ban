@@ -204,7 +204,7 @@ smd(
     pattern: "chat",
     desc: "chat with an AI",
     category: "ai",
-    use: "<Hii, David>",
+    use: "<Hii, WOlf>",
     filename: __filename,
   },
   async (_0x1c0160, _0x482db1) => {
@@ -224,7 +224,7 @@ smd(
     pattern: "gpt",
     desc: "chat with an AI",
     category: "ai",
-    use: "<Hii, David>",
+    use: "<Hii, WOLF>",
     filename: __filename,
   },
   async (_0x5cb388, _0x302ad5) => {
@@ -633,7 +633,7 @@ cmd(
       try {
         fs.unlink(_0x349452);
       } catch {}
-      await _0x4e4351.send(util.format(_0x536aa6), {}, "David", _0x680da4);
+      await _0x4e4351.send(util.format(_0x536aa6), {}, "WOLF", _0x680da4);
     } catch (_0x2ee8cc) {
       await _0x4e4351.error(_0x2ee8cc + "\n\ncommand url", _0x2ee8cc);
     }
@@ -664,7 +664,7 @@ cmd(
       if (!_0x3e1ea8 || !_0x3e1ea8.url) {
         return _0xbda24.reply("*_Failed To Create Url!_*");
       }
-      await _0xbda24.send(util.format(_0x3e1ea8.url), {}, "David", _0x7d6de1);
+      await _0xbda24.send(util.format(_0x3e1ea8.url), {}, "WOLF", _0x7d6de1);
     } catch (_0x1a2f02) {
       await _0xbda24.error(_0x1a2f02 + "\n\ncommand upload", _0x1a2f02);
     }
@@ -735,18 +735,18 @@ smd(
   async (_0x45da98) => {
     try {
       let { data: _0x44f98c } = await axios.get(
-        "https://api.github.com/repos/DeeCeeXxx/QUEEN_ANITA-V2d"
+        "https://api.github.com/repos/Prince-luck/ZZZ-ban"
       );
       let _0x1c73f9 = (
-        "\nQUEEN_ANITA-V2 A simple Mutil Device WhatsApp Bot Created and Managed by *" +
+        "\nZZZ ban A simple Mutil Device WhatsApp Bot Created and Managed by *" +
         Config.ownername +
         "*. 👑\n\n  *❲❒❳ Stars:* " +
         (_0x44f98c?.stargazers_count || "None (🥲)") +
         " stars\n  *❲❒❳ Forks:* " +
         (_0x44f98c?.forks_count || "1000+") +
-        " forks\n  *❲❒❳ Creator:* David Cyril\n  *❲❒❳ Created:* " +
+        " forks\n  *❲❒❳ Creator:* TEAM WOLF\n  *❲❒❳ Created:* " +
         (_0x44f98c?.created_at || "2024/06") +
-        "\n  *❲❒❳ Repo:* _https://github.com/DeeCeeXxx/Queen_Anita-V2_\n  *❲❒❳ Scan:* _" +
+        "\n  *❲❒❳ Repo:* _https://github.com/Prince-luck/ZZZ-ban_\n  *❲❒❳ Scan:* _" +
         scan +
         "_\n" +
         (Config.caption ? "\n\n" + Config.caption : "")
@@ -1042,7 +1042,7 @@ smd(
     alias: ["recognition", "anonychat"],
     desc: "Send message Annonymously",
     category: "ai",
-    use: "<Hii, David>",
+    use: "<Hii, >",
     filename: __filename,
   },
   async (_0x358984, _0x20693a, { smd: _0x12d243 }) => {
@@ -1219,7 +1219,7 @@ smd(
     pattern: "aitts",
     desc: "Text to Voice Using Eleven Lab Ai",
     category: "ai",
-    use: "<Hii, David>",
+    use: "<Hii, WOLF>",
     filename: __filename,
   },
   async (_0x1a01af, _0x1ac85a) => {

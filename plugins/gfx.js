@@ -5,7 +5,7 @@ const rwait = "✳️";
 const gfxFunc = async (cld, { Void, text, smd: cmdName }, sendError = true) => {
  try {
    text += ": ser";
-   let exampleText = `Example  : *${prefix + cmdName}* David`;
+   let exampleText = `Example  : *${prefix + cmdName}* WOLF`;
    let infoText = `*Separate the text with ':' sign*\n*Example : ${prefix + cmdName} Anita : Bot*`;
    let name = text.split(":")[0];
    let command = cmdName.toLowerCase();

@@ -1,6 +1,5 @@
 
-# QUEEN_ANITA-V2 WhatsApp Bot Simple Document
-### Simple Document on how The Database Works
+# QUatabase Works
 ----------------------------------------------------------------
 ### Simple Document on how The Database Works
 ##### Bot Database with and without MongoDB, PostgreSQL
