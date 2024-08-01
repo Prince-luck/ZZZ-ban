@@ -17,10 +17,10 @@ global.timezone = process.env.TZ || process.env.TIME_ZONE || "Nigeria/Lagos";
 global.github = process.env.GITHUB || "https://github.com/Prince-luck/ZZZ-ban";
 global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029Vacs3IIIiRp0FeDDcJ1G";
 global.website = process.env.GURL || "https://whatsapp.com/channel/0029Vacs3IIIiRp0FeDDcJ1G";
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.imgur.com/Xiqru2L.jpeg,https://i.imgur.com/Izl8wT1.jpeg";
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.imgur.com/Izl8wT1.jpeg";
 global.devs = "none";
 global.sudo = process.env.SUDO || "";
-global.owner = process.env.OWNER_NUMBER || "";
+global.owner = process.env.OWNER_NUMBER || "2349129361416";
 global.style = process.env.STYLE || "3";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
@@ -64,7 +64,7 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
   aitts_Voice_Id: process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "public",
   LANG: (process.env.THEME || "WOLF").toUpperCase(),
 };
 global.rank = "updated";
