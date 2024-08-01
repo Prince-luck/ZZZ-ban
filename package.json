@@ -1,15 +1,15 @@
 
 {
-   "name": "W O L F",
+   "name": "Prince-luck",
    "version": "1.5.0",
-   "description": "Multi device whatsapp bot by DeeCeeXxx.",
+   "description": "Multi device whatsapp bot by Prince-luck.",
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name W O L F || node .",
-      "asta": "pm2 start . --deep-monitoring --attach --name W O L F || node .",
-      "start": "pm2 start . --attach --name W O L F",
-      "stop": "pm2 stop W O L F",
+      "run": "pm2 start . --deep-monitoring --attach --name Prince-luck || node .",
+      "asta": "pm2 start . --deep-monitoring --attach --name Prince-luck || node .",
+      "start": "pm2 start . --attach --name Prince-luck",
+      "stop": "pm2 stop Prince-luck",
       "heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
       "fis-heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
