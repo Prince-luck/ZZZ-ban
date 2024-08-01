@@ -1,26 +1,24 @@
 
 {
-   "name": "WOLF-V2",
+   "name": "W O L F",
    "version": "1.5.0",
-   "description": "Multi device whatsapp bot by WOLF.",
+   "description": "Multi device whatsapp bot by DeeCeeXxx.",
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name WOLF-V2 || node .",
-      "asta": "pm2 start . --deep-monitoring --attach --name WOLF-V2 || node .",
-      "start": "pm2 start . --attach --name WOLF-V2",
-      "stop": "pm2 stop WOLF-V2",
-      "heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+      "run": "pm2 start . --deep-monitoring --attach --name W O L F || node .",
+      "asta": "pm2 start . --deep-monitoring --attach --name W O L F || node .",
+      "start": "pm2 start . --attach --name W O L F",
+      "stop": "pm2 stop W O L F",
+      "heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
       "fis-heroku-postbuild": "git clone https://github.com/Prince-luck/ZZZ-ban.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
    },
-   "author": "WOLF",
+   "author": "W o l f",
    "license": "Apache-2.0",
    "dependencies": {
-      "@distube/ytdl-core": "^4.13.5",
-      "@ffmpeg-installer/ffmpeg": "^1.1.0",
-      "@google/generative-ai": "^0.9.0",
       "@adiwajshing/keyed-db": "^0.2.4",
+      "@distube/ytdl-core": "^4.13.5",
       "@hapi/boom": "^9.1.4",
       "@whiskeysockets/baileys": "6.6.0",
       "acrcloud": "^1.4.0",
@@ -66,9 +64,8 @@
       "translatte": "^3.0.1",
       "util": "^0.12.4",
       "wa-sticker-formatter": "^4.3.2",
-      "youtube-yts": "^2.0.0",
-      "youtubedl-core": "^4.11.7",
-      "yt-search": "^2.10.4",
+      "youtubei.js": "^7.0.0",
+      "ytdl-core": "^4.11.5",
       "ytdl-core": "github:franceking1/flash-dls"
    },
    "directories": {
