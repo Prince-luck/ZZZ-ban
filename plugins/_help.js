@@ -1,6 +1,9 @@
 const os = require("os");
 const fs = require("fs");
 const Config = require("../config");
+const { tlang } = require('./path/to/tlangModule');
+const { runtime } = require('./path/to/runtimeModule');
+
 let {
   fancytext,
   tlang,
