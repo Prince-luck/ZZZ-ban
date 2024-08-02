@@ -1,107 +1,77 @@
-const DB = require("../lib/scraper");
-const { Config, smd } = require("../lib");
-const simpleGit = require("simple-git");
-const git = simpleGit();
-try {
-  const Heroku = require("heroku-client");
-  async function updateHerokuApp() {
+const { zokou } = require("some_module");
+const moment = require("moment");
+const { getBuffer } = require("some_other_module");
+const axios = require("axios").default;
+const speed = require("some_speed_module");
+
+let timestamp = speed();
+let flashspeed = (speed() - timestamp).toFixed(2);
+
+zokou({
+    pattern: "update",
+    desc: "Update the bot deployment",
+    Category: "tools",
+    reaction: "📡",
+    fromMe: true
+}, async (citel) => {
     try {
-      const heroku = new Heroku({ token: process.env.HEROKU_API_KEY });
-      await git.fetch();
-      const commits = await git.log(["main..origin/main"]);
-      if (commits.total === 0) {
-        return `${Config.botname} IS ON IT'S LATEST VERSION`;
-      } else {
-        console.log("Update Detected, trying to update your bot!");
-        const app = await heroku.get(`/apps/${process.env.HEROKU_APP_NAME}`);
-        const gitUrl = app.git_url.replace(
-          "https://",
-          `https://api:${process.env.HEROKU_API_KEY}@`
-        );
-        try {
-          await git.addRemote("heroku", gitUrl);
-        } catch (e) {
-          print("Heroku remote adding error", e);
-        }
-        await git.push("heroku", "main");
-        return "Bot updated. Restarting.";
-      }
-    } catch (e) {
-      print(e);
-      return "Can't Update, Request Denied!";
-    }
-  }
-  smd(
-    {
-      pattern: "checkupdate",
-      desc: "Shows repo's refreshed commits.",
-      category: "tools",
-      fromMe: true,
-      react: "🍂",
-      filename: __filename,
-      use: process.env.HEROKU_API_KEY ? "[ start ]" : "",
-    },
-    async (citel, text) => {
-      try {
         let commits = await DB.syncgit();
-        if (commits.total === 0)
-          return await citel.reply(
-            `*ZZZ-ban IS RUNNING ON LATEST\nPATCHES\nFIXES\UPGRADES*`
-          );
-        let update = await DB.sync();
-        await citel.bot.sendMessage(
-          citel.chat,
-          { text: update.replace(/SuhailTechIMd/, " WOLF") },
-          { quoted: citel }
-        );
-        if (
-          text == "start" &&
-          process.env.HEROKU_APP_NAME &&
-          process.env.HEROKU_API_KEY
-        ) {
-          citel.reply("Build started...");
-          const update = await updateHerokuApp();
-          return await citel.reply(update);
+        if (commits.total === 0) {
+            return await citel.reply(`*${Config.VERSION} IS Updating*`);
         }
-      } catch (e) {
-        citel.error(`${e}\n\nCommand: update`, e, "ERROR!");
-      }
-    }
-  );
-  smd(
-    {
-      pattern: "update",
-      desc: process.env.HEROKU_API_KEY
-        ? "*UPDATE SUCCESS*"
-        : "UPDATED YOUR DEPLOYEMENT",
-      fromMe: true,
-      category: "tools",
-      filename: __filename,
-    },
-    async (citel) => {
-      try {
-        let commits = await DB.syncgit();
-        if (commits.total === 0)
-          return await citel.reply(`*${Config.VERSION} IS Updating*`);
         let update = await DB.sync();
-        let text = ` 
-*UPDATE RUNNING*
-\t${update}*`;
+        let text = `*UPDATE RUNNING*\n\t${update}*`;
         await citel.bot.sendMessage(citel.jid, { text });
         await require("simple-git")().reset("hard", ["HEAD"]);
         await require("simple-git")().pull();
         await citel.reply(
-          process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY
-            ? "*`BOT UPDATED`*\n*RESTART YOUR BOT FOR UPDATE TO TAKE EFFECT*"
-            : "```*Successfully updated. Now You Have Latest Version Installed!*"
+            process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY
+                ? "*`BOT UPDATED`*\n*RESTART YOUR BOT FOR UPDATE TO TAKE EFFECT*"
+                : "```*Successfully updated. Now You Have Latest Version Installed!*"
         );
-      } catch (e) {
+    } catch (e) {
         citel.error(`${e}\n\nCommand: updatenow`, e, "ERROR!");
-      }
     }
-  );
-  if (process.env.HEROKU_API_KEY) {
-    print("HEROKU : checking for auto update!");
+});
+
+if (process.env.HEROKU_API_KEY) {
+    console.log("HEROKU : checking for auto update!");
     updateHerokuApp();
-  }
-} catch (e) {}
+}
+
+zokou({
+    pattern: "speed",
+    desc: "Check bot speed",
+    Category: "tools",
+    reaction: "📡",
+    fromMe: true
+}, async (citel, match) => {
+    await citel.reply(`Speed: ${flashspeed} ms`);
+});
+
+zokou({
+    pattern: "uptime",
+    desc: "Check bot uptime",
+    Category: "tools",
+    reaction: "🎭",
+    fromMe: true
+}, async (citel, match) => {
+    const runtime = process.uptime();
+    await citel.reply(`Uptime: ${runtime}`);
+});
+
+zokou({
+    nomCom: "ss",
+    desc: "Take a screenshot of a URL",
+    Categorie: "tools",
+    reaction: "🎥",
+    fromMe: true
+}, async (citel, match) => {
+    const url = match[1];
+    if (!url || url.length === 0) {
+        return citel.reply("Please provide a URL.");
+    }
+    const screenshotUrl = `https://api.screenshotapi.net/screenshot?token=your_token&url=${url}`;
+    const imageBuffer = await getBuffer(screenshotUrl);
+    await citel.sendMessage(citel.jid, { image: imageBuffer }, { caption: "Here is your screenshot" }, { quoted: citel });
+});
