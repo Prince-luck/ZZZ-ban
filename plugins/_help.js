@@ -30,11 +30,11 @@ smd(
 ➮ʀᴜɴᴛɪᴍᴇ - ${runtime(process.uptime())} 
 ➮ᴅᴀᴛᴇ - ${message.date} 
 ➮ɴᴏᴡ ᴛɪᴍᴇ - ${message.time} 
-➮Fᴏᴜɴᴅᴇʀ- *Star King*
+➮Fᴏᴜɴᴅᴇʀ- *W O L F *
 ➮Oᴡɴᴇʀ - ${Config.ownername} 
 ➮Nᴜᴍ - ${owner.split(",")[0]} 
 ➮Mᴇᴍᴏ - ${formatp(os.totalmem() - os.freemem())} 
-      \n *QUEEN_ALYA SIMPLE WHATSAPP BOT*\n\n ${readmore} 
+      \n *ZZZ-ban SIMPLE WHATSAPP BOT*\n\n ${readmore} 
 ╭──❰ *ALL MENU* ❱ 
 │💞 Lɪꜱᴛ 
 │💞 Cᴀᴛᴇɢᴏʀʏ 

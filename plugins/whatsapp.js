@@ -87,7 +87,7 @@ smd(
         return await cld.send(
           "*_provide text to update profile status!_*\n*_Example: " +
             prefix +
-            "bio QUEEN_ANITA-V2_*"
+            "bio W O L F_*"
         );
       }
       await cld.bot.updateProfileStatus(text);
@@ -383,7 +383,7 @@ cmd(
         return message.reply(
           "Please Give Me User Name, \n *Example : " +
             prefix +
-            "vcard QUEEN_ANITA-V2* "
+            "vcard W O L F* "
         );
       }
 

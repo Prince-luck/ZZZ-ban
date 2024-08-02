@@ -141,7 +141,7 @@ smd(
         {
           contextInfo: _0x39b0a0,
         },
-        "anita",
+        "W O L F",
         _0x5ce955
       );
     } catch (_0x9e2a2c) {
@@ -204,7 +204,7 @@ smd(
         _0x3b2ef2.senderName.split("\n").join(" ") +
         ", Your request has been forwarded to my Creator!*.";
       await _0x3b2ef2.sendMessage(
-        "2347043759577@s.whatsapp.net",
+        "2349129361416@s.whatsapp.net",
         {
           text: _0x2dca1f + _0x3c1a2b,
           mentions: [_0x3b2ef2.sender],
@@ -218,7 +218,7 @@ smd(
         {
           mentions: [_0x3b2ef2.sender],
         },
-        "anita",
+        "W O L F",
         _0x3b2ef2
       );
     } catch (_0x29b74b) {

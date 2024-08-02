@@ -1,3 +1,4 @@
+//wolf
 const Config = require("../config");
 let {
   sendGImages,
