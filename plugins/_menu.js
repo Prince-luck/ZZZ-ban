@@ -150,7 +150,7 @@ astro_patch.smd(
   ${menuThemeCommandPrefix} *ᴄᴏᴍᴍᴀɴᴅs:* ${commands.length}
   ${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
   ${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
-  ${menuThemeFooter}\n                   ┌┤✑  Thanks for Choosing ZZZ-V2
+  ${menuThemeFooter}\n           ┌┤✑  Thanks for Choosing ZZZ-V2
 │└────────────┈ ⳹        
 │*©2024-2099 WOLF*
 └─────────────────┈ ⳹
