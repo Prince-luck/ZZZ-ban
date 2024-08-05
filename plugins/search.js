@@ -290,7 +290,7 @@ smd({
  )
 
     //---------------------------------------------------------------------------
-/*
+
 smd({
             pattern: "horo",
             category: "search",
@@ -323,7 +323,8 @@ smd({
             }catch(e){return await message.error(`${e}\n\n command: horo`,e,`*_Uhh dear, Didn't get any results!_*`) }
         }
     )
-    */
+    
+   
     //---------------------------------------------------------------------------
 
 smd({
@@ -357,7 +358,7 @@ text +="\n*Match Ended:* " + dat.data[i].matchEnded;
 //---------------------------------------------------------------------------
 smd({
             pattern: "google",
-            alias :['search','gsearch'],
+            alias :['gsearch'],
             category: "search",
             desc: "Sends info of given query from Google Search.",
             use: '<text>',
