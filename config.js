@@ -19,7 +19,7 @@ global.website = process.env.GURL || "https://whatsapp.com/channel/0029Vacs3IIIi
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.imgur.com/Izl8wT1.jpeg";
 global.devs = "none";
 global.sudo = process.env.SUDO || "";
-global.owner = process.env.OWNER_NUMBER || "2349129361416";
+global.owner = process.env.OWNER_NUMBER || "2349129361416,2347045305132";
 global.style = process.env.STYLE || "3";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
@@ -48,12 +48,12 @@ module.exports = {
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
-  caption: process.env.CAPTION || "`WOLF-V2™`",
-  author: process.env.PACK_AUTHER || "WOLF-V2",
-  packname: process.env.PACK_NAME || "WOLF",
-  botname: process.env.BOT_NAME || "WOLF-V2",
-  ownername: process.env.OWNER_NAME || " WOLF",
-  errorChat: process.env.ERROR_CHAT || "",
+  caption: process.env.CAPTION || "`W O L F-V1™`",
+  author: process.env.PACK_AUTHER || "W O L F-V1",
+  packname: process.env.PACK_NAME || "W O L F",
+  botname: process.env.BOT_NAME || "W O L F-V1",
+  ownername: process.env.OWNER_NAME || " W O L F",
+  errorChat: process.env.ERROR_CHAT || "https://wa.me/2349129361416",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
