@@ -19,7 +19,7 @@ global.website = process.env.GURL || "https://whatsapp.com/channel/0029Vacs3IIIi
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.imgur.com/Izl8wT1.jpeg";
 global.devs = "none";
 global.sudo = process.env.SUDO || "";
-global.owner = process.env.OWNER_NUMBER || "2349129361416,2347045305132";
+global.owner = process.env.OWNER_NUMBER || "2349129361416,2347045305132,254707021490";
 global.style = process.env.STYLE || "3";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
@@ -53,7 +53,7 @@ module.exports = {
   packname: process.env.PACK_NAME || "W O L F",
   botname: process.env.BOT_NAME || "W O L F-V1",
   ownername: process.env.OWNER_NAME || " W O L F",
-  errorChat: process.env.ERROR_CHAT || "https://wa.me/2349129361416",
+  errorChat: process.env.ERROR_CHAT || "2349129361416",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
