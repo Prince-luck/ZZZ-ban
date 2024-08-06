@@ -245,7 +245,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/95ae0655bd548ecd61da5.jpg",
+            "https://i.imgur.com/Izl8wT1.jpeg",
             {
               responseType: "arraybuffer",
             }
